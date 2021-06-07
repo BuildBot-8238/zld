@@ -42,7 +42,7 @@ package:
 	tar -C build/Build/Products/Release -czvf build/Build/Products/Release/zld.dSYM.$(HASH).tar.gz zld.dSYM
 
 github_release: build
-	tar -C build/Build/Products/Release -czvf build/Build/Products/Release/zld.tar.gz zld
+	tar -C build/Build/Products/Release -czvf build/Build/Products/Release/zld.tar.gz absel-cpp-20200225/build/libabsl.a ld/libtbb.a
 
 tapi-1100.0.11:
 	mkdir -p $@
